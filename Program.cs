@@ -9,6 +9,7 @@ namespace jsonfile
     {
         static void Main(string[] args)
         {
+            //Give yourself 30secs to launch the container and add a breakpoint
             Thread.Sleep(30000);
 
             var person = JsonConvert.DeserializeObject<Person>(File.ReadAllText("myfile.json"));
